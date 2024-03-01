@@ -1,0 +1,350 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 667377
+##  Job Name : trac-all
+##  Nodelist : node1317
+##      CPUs : 1
+##  Mem/Node : 4096 MB
+## Directory : /oscar/data/salhusai/dkim39/maddata/PD/create_config/config_files
+##   Job Started : Tue Feb 20 02:53:00 PM EST 2024
+###############################################################################
+Input: Command not found.
+INFO: SUBJECTS_DIR is /oscar/data/salhusai/dkim39/maddata/PD/data/reconall_output
+INFO: Diffusion root is /users/dkim39/data/dkim39/maddata/PD/output
+Actual FREESURFER_HOME /oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/freesurfer-7.3.2-zop5n6mtsist5fixafhid2jevy4rupdn
+trac-preproc -c /users/dkim39/data/dkim39/maddata/PD/output/3105/scripts/dmrirc.local -log /users/dkim39/data/dkim39/maddata/PD/output/3105/scripts/trac-all.log -cmd /users/dkim39/data/dkim39/maddata/PD/output/3105/scripts/trac-all.cmd
+#-------------------------------------
+/oscar/rt/9.2/software/0.20-generic/0.20.1/opt/spack/linux-rhel9-x86_64_v3/gcc-11.3.1/freesurfer-7.3.2-zop5n6mtsist5fixafhid2jevy4rupdn/bin/trac-preproc 
+#-------------------------------------
+#@# Image corrections Tue Feb 20 02:53:02 PM EST 2024
+rm -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvals /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs
+mri_convert --bvec-voxel /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz
+mri_convert --bvec-voxel /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm...
+mriio.cpp: starting sdcmLoadVolume()
+Starting sdcmLoadVolume()
+Getting Series No 
+INFO: Found 67 files in /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401
+INFO: Scanning for Series Number 4
+Scanning Directory 
+INFO: found 65 files in series
+INFO: loading series header info.
+
+RunNo = 3
+WARNING: Run 1 appears to be truncated
+  Files Found: 65, Files Expected (lRep+1): 1
+FileName 		/users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm
+Identification
+	NumarisVer        syngo MR B15
+	ScannerModel      TrioTim 
+	PatientName       DE-IDENTIFIED 
+Date and time
+	StudyDate         20110324
+	StudyTime         130458.843000 
+	SeriesTime        133235.046000 
+	AcqTime           133223.117500 
+Acquisition parameters
+	PulseSeq          ep_b0 
+	Protocol          DTI_gated 
+	PhEncDir          COL
+	EchoNo            1
+	FlipAngle         90
+	EchoTime          88
+	InversionTime     -1
+	RepetitionTime    900
+	PhEncFOV          230
+	ReadoutFOV        230
+Image information
+	RunNo             3
+	SeriesNo          4
+	ImageNo           1
+	NImageRows        1044
+	NImageCols        1044
+	NFrames           65
+	SliceArraylSize   72
+	IsMosaic          1
+	ImgPos            1035.0000 1045.1205 -71.0000 
+	VolRes              1.9828   1.9828   2.0000 
+	VolDim            116      116       72 
+	Vc                 -1.0000  -0.0000   0.0000 
+	Vr                 -0.0000  -1.0000   0.0000 
+	Vs                 -0.0000  -0.0000   1.0000 
+	VolCenter           0.0000   0.0000   0.0000 
+	TransferSyntaxUID 1.2.840.10008.1.2.1
+INFO: sorting.
+INFO: (116 116  72), nframes = 65, ismosaic=1
+sdfi->UseSliceScaleFactor 0
+INFO: rescale not needed
+datatype = 4, short=4, float=3
+Could not parse NUMARIS version string syngo MR B15
+found in dicom tag 18,1020 (len = 3 != 6)
+Repetition Time = 900, TR = 900 ms
+PE Dir COL COL
+AutoAlign matrix detected 
+AutoAlign Matrix --------------------- 
+ 1.00000   0.00000   0.00000   0.00000;
+ 0.00000   1.00000   0.00000   0.00000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+FileName 		/users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm
+Identification
+	NumarisVer        syngo MR B15
+	ScannerModel      TrioTim 
+	PatientName       DE-IDENTIFIED 
+Date and time
+	StudyDate         20110324
+	StudyTime         130458.843000 
+	SeriesTime        133235.046000 
+	AcqTime           133223.117500 
+Acquisition parameters
+	PulseSeq          ep_b0 
+	Protocol          DTI_gated 
+	PhEncDir          COL
+	EchoNo            1
+	FlipAngle         90
+	EchoTime          88
+	InversionTime     -1
+	RepetitionTime    900
+	PhEncFOV          230
+	ReadoutFOV        230
+Image information
+	RunNo             3
+	SeriesNo          4
+	ImageNo           1
+	NImageRows        1044
+	NImageCols        1044
+	NFrames           65
+	SliceArraylSize   72
+	IsMosaic          1
+	ImgPos            115.0000 125.1205 -71.0000 
+	VolRes              1.9828   1.9828   2.0000 
+	VolDim            116      116       72 
+	Vc                 -1.0000  -0.0000   0.0000 
+	Vr                 -0.0000  -1.0000   0.0000 
+	Vs                 -0.0000  -0.0000   1.0000 
+	VolCenter           0.0000  10.1205   1.0000 
+	TransferSyntaxUID 1.2.840.10008.1.2.1
+UseSliceScaleFactor 0 (slice 0: 1)
+IsDWI = 1
+sagrev = 0, correv =0, trarev = 0
+Vs = -0 -0 1
+INFO: no Siemens slice order reversal detected (good!). 
+DTIbvecChangeSpace(): 1 2
+TR=900.00, TE=88.00, TI=-1.00, flip angle=90.00
+i_ras = (-1, -0, 0)
+j_ras = (-0, -1, 0)
+k_ras = (-0, -0, 1)
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz...
+Saving bvals and bvecs
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.voxel_space.bvecs /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs
+mri_probedicom --i /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_32_35.0/I226401/PPMI_3105_MR_DTI_gated__br_raw_20110406113716428_1_S103324_I226401.dcm >> /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dcminfo.dat
+rm -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvals /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs
+mri_convert --bvec-voxel /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz
+mri_convert --bvec-voxel /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm...
+mriio.cpp: starting sdcmLoadVolume()
+Starting sdcmLoadVolume()
+Getting Series No 
+INFO: Found 67 files in /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400
+INFO: Scanning for Series Number 12
+Scanning Directory 
+INFO: found 65 files in series
+INFO: loading series header info.
+
+RunNo = 11
+WARNING: Run 1 appears to be truncated
+  Files Found: 65, Files Expected (lRep+1): 1
+FileName 		/users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm
+Identification
+	NumarisVer        syngo MR B15
+	ScannerModel      TrioTim 
+	PatientName       DE-IDENTIFIED 
+Date and time
+	StudyDate         20110324
+	StudyTime         130458.843000 
+	SeriesTime        135628.234000 
+	AcqTime           135615.092500 
+Acquisition parameters
+	PulseSeq          ep_b0 
+	Protocol          DTI_gated 
+	PhEncDir          COL
+	EchoNo            1
+	FlipAngle         90
+	EchoTime          88
+	InversionTime     -1
+	RepetitionTime    900
+	PhEncFOV          230
+	ReadoutFOV        230
+Image information
+	RunNo             11
+	SeriesNo          12
+	ImageNo           1
+	NImageRows        1044
+	NImageCols        1044
+	NFrames           65
+	SliceArraylSize   72
+	IsMosaic          1
+	ImgPos            1035.0000 1045.1205 -71.0000 
+	VolRes              1.9828   1.9828   2.0000 
+	VolDim            116      116       72 
+	Vc                 -1.0000  -0.0000   0.0000 
+	Vr                 -0.0000  -1.0000   0.0000 
+	Vs                 -0.0000  -0.0000   1.0000 
+	VolCenter           0.0000   0.0000   0.0000 
+	TransferSyntaxUID 1.2.840.10008.1.2.1
+INFO: sorting.
+INFO: (116 116  72), nframes = 65, ismosaic=1
+sdfi->UseSliceScaleFactor 0
+INFO: rescale not needed
+datatype = 4, short=4, float=3
+Could not parse NUMARIS version string syngo MR B15
+found in dicom tag 18,1020 (len = 3 != 6)
+Repetition Time = 900, TR = 900 ms
+PE Dir COL COL
+AutoAlign matrix detected 
+AutoAlign Matrix --------------------- 
+ 1.00000   0.00000   0.00000   0.00000;
+ 0.00000   1.00000   0.00000   0.00000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+
+FileName 		/users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm
+Identification
+	NumarisVer        syngo MR B15
+	ScannerModel      TrioTim 
+	PatientName       DE-IDENTIFIED 
+Date and time
+	StudyDate         20110324
+	StudyTime         130458.843000 
+	SeriesTime        135628.234000 
+	AcqTime           135615.092500 
+Acquisition parameters
+	PulseSeq          ep_b0 
+	Protocol          DTI_gated 
+	PhEncDir          COL
+	EchoNo            1
+	FlipAngle         90
+	EchoTime          88
+	InversionTime     -1
+	RepetitionTime    900
+	PhEncFOV          230
+	ReadoutFOV        230
+Image information
+	RunNo             11
+	SeriesNo          12
+	ImageNo           1
+	NImageRows        1044
+	NImageCols        1044
+	NFrames           65
+	SliceArraylSize   72
+	IsMosaic          1
+	ImgPos            115.0000 125.1205 -71.0000 
+	VolRes              1.9828   1.9828   2.0000 
+	VolDim            116      116       72 
+	Vc                 -1.0000  -0.0000   0.0000 
+	Vr                 -0.0000  -1.0000   0.0000 
+	Vs                 -0.0000  -0.0000   1.0000 
+	VolCenter           0.0000  10.1205   1.0000 
+	TransferSyntaxUID 1.2.840.10008.1.2.1
+UseSliceScaleFactor 0 (slice 0: 1)
+IsDWI = 1
+sagrev = 0, correv =0, trarev = 0
+Vs = -0 -0 1
+INFO: no Siemens slice order reversal detected (good!). 
+DTIbvecChangeSpace(): 1 2
+TR=900.00, TE=88.00, TI=-1.00, flip angle=90.00
+i_ras = (-1, -0, 0)
+j_ras = (-0, -1, 0)
+k_ras = (-0, -0, 1)
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz...
+Saving bvals and bvecs
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.voxel_space.bvecs /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs
+mri_probedicom --i /users/dkim39/data/dkim39/maddata/PD/data/DTI/3105/DTI/2011-03-24_13_56_28.0/I226400/PPMI_3105_MR_DTI_gated__br_raw_20110406113704458_1_S103323_I226400.dcm >> /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dcminfo.dat
+rm -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvals.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs.tmp
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvals.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvals
+orientLAS /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz
+INFO: input image orientation is LPS
+INFO: input image determinant is 7.86266
+mri_convert -oni 116 -onj 116 -onk 72 -oid -1 0 0 -ojd 0 1 0 -okd 0 0 1 -oc 0 12.1033 1 -rt nearest /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz
+mri_convert -oni 116 -onj 116 -onk 72 -oid -1 0 0 -ojd 0 1 0 -okd 0 0 1 -oc 0 12.1033 1 -rt nearest /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.nii.gz...
+TR=900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -0, 0)
+j_ras = (-0, -1, 0)
+k_ras = (-0, -0, 1)
+Reslicing using nearest 
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz...
+INFO: found /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvals, copying
+INFO: found /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.1.bvecs, converting to LAS
+rm -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvals.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs.tmp
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs
+mv -f /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvals.tmp /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvals
+orientLAS /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz
+INFO: input image orientation is LPS
+INFO: input image determinant is 7.86266
+mri_convert -oni 116 -onj 116 -onk 72 -oid -1 0 0 -ojd 0 1 0 -okd 0 0 1 -oc 0 12.1033 1 -rt nearest /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz
+mri_convert -oni 116 -onj 116 -onk 72 -oid -1 0 0 -ojd 0 1 0 -okd 0 0 1 -oc 0 12.1033 1 -rt nearest /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.nii.gz...
+TR=900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, -0, 0)
+j_ras = (-0, -1, 0)
+k_ras = (-0, -0, 1)
+Reslicing using nearest 
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz...
+INFO: found /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvals, copying
+INFO: found /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig.2.bvecs, converting to LAS
+mri_convert --frame 0 /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.1.nii.gz
+mri_convert --frame 0 /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.1.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz...
+TR=900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+keeping frame 0
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.1.nii.gz...
+mri_convert --frame 0 /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.2.nii.gz
+mri_convert --frame 0 /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.2.nii.gz 
+reading from /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz...
+TR=900.00, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 0, 0)
+j_ras = (0, 1, 0)
+k_ras = (0, 0, 1)
+keeping frame 0
+writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.2.nii.gz...
+mri_concat --i /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.2.nii.gz --o /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.nii.gz
+ninputs = 2
+Checking inputs
+nframestot = 2
+Allocing output
+Done allocing
+nframes = 2
+Writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.nii.gz
+cp -p /oscar/runtime/software/external/fsl/6.0.7.7//src/topup/flirtsch/b02b0.cnf /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri
+topup --imain=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_orig_las.nii.gz --datain=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/acqp.txt --config=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/b02b0.cnf --out=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/topup --iout=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup.nii.gz
+mri_concat --i /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.nii.gz --o /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.nii.gz
+ninputs = 2
+Checking inputs
+nframestot = 130
+Allocing output
+Done allocing
+nframes = 130
+Writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.nii.gz
+cat /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.bvecs /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.bvecs > /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.bvecs
+cat /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.1.bvals /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.2.bvals > /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.bvals
+mri_concat --i /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup.nii.gz --mean --o /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup.nii.gz
+ninputs = 1
+Checking inputs
+nframestot = 2
+Allocing output
+Done allocing
+nframes = 2
+Computing mean across frames
+Writing to /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup.nii.gz
+bet /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup.nii.gz /users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup_brain.nii.gz -m -f 0.3
+eddy_openmp --imain=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.nii.gz --mask=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/lowb_topup_brain_mask.nii.gz --bvecs=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.bvecs --bvals=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi_orig_las.bvals --acqp=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/acqp.txt --index=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/index.txt --data_is_shelled --topup=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/topup --out=/users/dkim39/data/dkim39/maddata/PD/output/3105/dmri/dwi
+eddy_openmp: Command not found.
+Linux node1317.oscar.ccv.brown.edu 5.14.0-284.11.1.el9_2.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Apr 12 10:45:03 EDT 2023 x86_64 x86_64 x86_64 GNU/Linux
+
+trac-preproc exited with ERRORS at Tue Feb 20 03:00:48 PM EST 2024
+
